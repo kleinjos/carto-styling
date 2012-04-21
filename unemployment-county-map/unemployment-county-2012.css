@@ -1,0 +1,49 @@
+//-------------------------------WHOSE STREETS-------------------------
+
+//-------------------------------WHOSE STREETS-------------------------
+
+
+//.8 5.8 7.4 8.7 10 11.95 36.2//
+Map{
+background-color:#C0C0C0;}
+@purple:#336699;
+@red:desaturate(darken(#eb8f00,10%),10%);
+@blue:#eb8f00;
+#unempl {
+  ::highlight {
+  line-color:#C0C0C0;
+  line-join:round;
+  line-width:.4;
+  line-opacity:1;
+  [N_2012 > 0] {
+    polygon-fill:lighten(@purple,75%);
+  }
+  [N_2012 <= 36.2] {
+    polygon-fill:@purple;
+  }
+  [N_2012 <= 11.95] {
+    polygon-fill:lighten(@purple,15%);
+  }  
+  [N_2012 <= 10] {
+    polygon-fill:lighten(@purple,30%);
+  }
+  [N_2012 <= 8.7] {
+    polygon-fill:lighten(@purple,45%);
+  }
+  [N_2012 <= 7.4] {
+    polygon-fill:lighten(@purple,60%);
+  } 
+  [N_2012 <= 5.8] {
+    polygon-fill:lighten(@purple,75%)
+  }  
+ [N_2012 <= .8] {
+    polygon-fill:lighten(@purple,90%)
+  }
+  [N_2012 = 0] {
+    line-opacity:1;
+    polygon-opacity:1;
+      polygon-fill:transparent;
+  }
+  }
+}
+//----------------------O-C-C-U-P-Y-A-L-L-S-T-R-E-E-T-S------------

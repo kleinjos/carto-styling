@@ -1,0 +1,1052 @@
+*/*   0%   20%   40%   60%   80%  100% 
+ 0.00  2.57  3.60  4.62  6.29 31.69*/*
+
+//---------------------------------------------------------------
+Map{
+background-color:transparent;}
+@purple:#a40f24;
+@red:desaturate(darken(#0b3661,10%),10%);
+@blue:#eb8f00;
+#delinquent {
+  line-color:#afaca0;
+  line-width:.4;
+  line-opacity:1;
+  [4q2010 > 0] {
+    polygon-fill:lighten(@purple,75%);
+  }
+  [4q2010 > 6.29] {
+    polygon-fill:@purple;
+  }
+  [4q2010 <= 6.29] {
+    polygon-fill:lighten(@purple,15%);
+  }  
+  [4q2010 <= 4.62] {
+    polygon-fill:lighten(@purple,30%);
+  }
+  [4q2010 <= 3.6] {
+    polygon-fill:lighten(@purple,45%);
+  }
+  [4q2010 <= 2.57] {
+    polygon-fill:lighten(@purple,60%);
+  } 
+  [4q2010 = 0] {
+    line-opacity:0;
+    polygon-opacity:0;
+  }
+}
+
+//----------------------O-C-C-U-P-Y-A-L-L-S-T-R-E-E-T-S------------
+
+
+
+<div class="category"><div id="location">{{{county_nam}}}, {{{state}}}
+<div id="delinquency>{{{4q2010}}}%</div></div></div>
+
+
+Percent of Mortgage Debt Balance 90+ Days Delinquent, Mortgage Debt includes first mortgages, home equity loans and home equity lines of credit.
+
+Only counties with an estimated population of at least 10,000 consumers with credit reports in  fourth quarter 2010 are included.
+
+Source: FRBNY Consumer Credit Panel
+
+
+
+
+
+Fourth Quarter 2010, Percent of Mortgage Debt Balance 90+ Days Delinquent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/*   0%   20%   40%   60%   80%  100% 
+ 0.00  2.57  3.60  4.62  6.29 31.69*/*
+
+//---------------------------------------------------------------
+Map{
+background-color:transparent;}
+@purple:#a40f24;
+@red:desaturate(darken(#0b3661,10%),10%);
+@blue:#eb8f00;
+#delinquent {
+  line-color:#afaca0;
+  line-width:.4;
+  line-opacity:1;
+  [4q2009 > 0] {
+    polygon-fill:lighten(@purple,75%);
+  }
+  [4q2009 > 6.29] {
+    polygon-fill:@purple;
+  }
+  [4q2009 <= 6.29] {
+    polygon-fill:lighten(@purple,15%);
+  }  
+  [4q2009 <= 4.62] {
+    polygon-fill:lighten(@purple,30%);
+  }
+  [4q2009 <= 3.6] {
+    polygon-fill:lighten(@purple,45%);
+  }
+  [4q2009 <= 2.57] {
+    polygon-fill:lighten(@purple,60%);
+  } 
+  [4q2009 = 0] {
+    line-opacity:0;
+    polygon-opacity:0;
+  }
+}
+
+//----------------------O-C-C-U-P-Y-A-L-L-S-T-R-E-E-T-S------------
+
+
+
+<div class="category"><div id="location">{{{county_nam}}}, {{{state}}}
+<div id="delinquency>{{{4q2009}}}%</div></div></div>
+
+
+Percent of Mortgage Debt Balance 90+ Days Delinquent, Mortgage Debt includes first mortgages, home equity loans and home equity lines of credit.
+
+Only counties with an estimated population of at least 10,000 consumers with credit reports in  fourth quarter 2009 are included.
+
+Source: FRBNY Consumer Credit Panel
+
+
+
+
+
+Fourth Quarter 2009, Percent of Mortgage Debt Balance 90+ Days Delinquent
+
+
+
+
+
+
+
+
+
+*/*   0%   20%   40%   60%   80%  100% 
+ 0.00  2.57  3.60  4.62  6.29 31.69*/*
+
+//---------------------------------------------------------------
+Map{
+background-color:transparent;}
+@purple:#a40f24;
+@red:desaturate(darken(#0b3661,10%),10%);
+@blue:#eb8f00;
+#delinquent {
+  line-color:#afaca0;
+  line-width:.4;
+  line-opacity:1;
+  [4q2008 > 0] {
+    polygon-fill:lighten(@purple,75%);
+  }
+  [4q2008 > 6.29] {
+    polygon-fill:@purple;
+  }
+  [4q2008 <= 6.29] {
+    polygon-fill:lighten(@purple,15%);
+  }  
+  [4q2008 <= 4.62] {
+    polygon-fill:lighten(@purple,30%);
+  }
+  [4q2008 <= 3.6] {
+    polygon-fill:lighten(@purple,45%);
+  }
+  [4q2008 <= 2.57] {
+    polygon-fill:lighten(@purple,60%);
+  } 
+  [4q2008 = 0] {
+    line-opacity:0;
+    polygon-opacity:0;
+  }
+}
+
+//----------------------O-C-C-U-P-Y-A-L-L-S-T-R-E-E-T-S------------
+
+
+
+<div class="category"><div id="location">{{{county_nam}}}, {{{state}}}
+<div id="delinquency>{{{4q2008}}}%</div></div></div>
+
+
+Percent of Mortgage Debt Balance 90+ Days Delinquent, Mortgage Debt includes first mortgages, home equity loans and home equity lines of credit.
+
+Only counties with an estimated population of at least 10,000 consumers with credit reports in  fourth quarter 2008 are included.
+
+Source: FRBNY Consumer Credit Panel
+
+
+
+
+
+Fourth Quarter 2008, Percent of Mortgage Debt Balance 90+ Days Delinquent
+
+
+
+*/*   0%   20%   40%   60%   80%  100% 
+ 0.00  2.57  3.60  4.62  6.29 31.69*/*
+
+//---------------------------------------------------------------
+Map{
+background-color:transparent;}
+@purple:#a40f24;
+@red:desaturate(darken(#0b3661,10%),10%);
+@blue:#eb8f00;
+#delinquent {
+  line-color:#afaca0;
+  line-width:.4;
+  line-opacity:1;
+  [4q2007 > 0] {
+    polygon-fill:lighten(@purple,75%);
+  }
+  [4q2007 > 6.29] {
+    polygon-fill:@purple;
+  }
+  [4q2007 <= 6.29] {
+    polygon-fill:lighten(@purple,15%);
+  }  
+  [4q2007 <= 4.62] {
+    polygon-fill:lighten(@purple,30%);
+  }
+  [4q2007 <= 3.6] {
+    polygon-fill:lighten(@purple,45%);
+  }
+  [4q2007 <= 2.57] {
+    polygon-fill:lighten(@purple,60%);
+  } 
+  [4q2007 = 0] {
+    line-opacity:0;
+    polygon-opacity:0;
+  }
+}
+
+//----------------------O-C-C-U-P-Y-A-L-L-S-T-R-E-E-T-S------------
+
+
+
+<div class="category"><div id="location">{{{county_nam}}}, {{{state}}}
+<div id="delinquency>{{{4q2007}}}%</div></div></div>
+
+
+Percent of Mortgage Debt Balance 90+ Days Delinquent, Mortgage Debt includes first mortgages, home equity loans and home equity lines of credit.
+
+Only counties with an estimated population of at least 10,000 consumers with credit reports in  fourth quarter 2007 are included.
+
+Source: FRBNY Consumer Credit Panel
+
+
+
+
+
+Fourth Quarter 2007, Percent of Mortgage Debt Balance 90+ Days Delinquent
+
+
+
+
+
+*/*   0%   20%   40%   60%   80%  100% 
+ 0.00  2.57  3.60  4.62  6.29 31.69*/*
+
+//---------------------------------------------------------------
+Map{
+background-color:transparent;}
+@purple:#a40f24;
+@red:desaturate(darken(#0b3661,10%),10%);
+@blue:#eb8f00;
+#delinquent {
+  line-color:#afaca0;
+  line-width:.4;
+  line-opacity:1;
+  [4q2010 > 0] {
+    polygon-fill:lighten(@purple,75%);
+  }
+  [4q2010 > 6.29] {
+    polygon-fill:@purple;
+  }
+  [4q2010 <= 6.29] {
+    polygon-fill:lighten(@purple,15%);
+  }  
+  [4q2010 <= 4.62] {
+    polygon-fill:lighten(@purple,30%);
+  }
+  [4q2010 <= 3.6] {
+    polygon-fill:lighten(@purple,45%);
+  }
+  [4q2010 <= 2.57] {
+    polygon-fill:lighten(@purple,60%);
+  } 
+  [4q2010 = 0] {
+    line-opacity:0;
+    polygon-opacity:0;
+  }
+}
+
+//----------------------O-C-C-U-P-Y-A-L-L-S-T-R-E-E-T-S------------
+
+
+
+<div class="category"><div id="location">{{{county_nam}}}, {{{state}}}
+<div id="delinquency>{{{4q2010}}}%</div></div></div>
+
+
+Percent of Mortgage Debt Balance 90+ Days Delinquent, Mortgage Debt includes first mortgages, home equity loans and home equity lines of credit.
+
+Only counties with an estimated population of at least 10,000 consumers with credit reports in  fourth quarter 2010 are included.
+
+Source: FRBNY Consumer Credit Panel
+
+
+
+
+
+Fourth Quarter 2010, Percent of Mortgage Debt Balance 90+ Days Delinquent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/*   0%   20%   40%   60%   80%  100% 
+ 0.00  2.57  3.60  4.62  6.29 31.69*/*
+
+//---------------------------------------------------------------
+Map{
+background-color:transparent;}
+@purple:#a40f24;
+@red:desaturate(darken(#0b3661,10%),10%);
+@blue:#eb8f00;
+#delinquent {
+  line-color:#afaca0;
+  line-width:.4;
+  line-opacity:1;
+  [4q2009 > 0] {
+    polygon-fill:lighten(@purple,75%);
+  }
+  [4q2009 > 6.29] {
+    polygon-fill:@purple;
+  }
+  [4q2009 <= 6.29] {
+    polygon-fill:lighten(@purple,15%);
+  }  
+  [4q2009 <= 4.62] {
+    polygon-fill:lighten(@purple,30%);
+  }
+  [4q2009 <= 3.6] {
+    polygon-fill:lighten(@purple,45%);
+  }
+  [4q2009 <= 2.57] {
+    polygon-fill:lighten(@purple,60%);
+  } 
+  [4q2009 = 0] {
+    line-opacity:0;
+    polygon-opacity:0;
+  }
+}
+
+//----------------------O-C-C-U-P-Y-A-L-L-S-T-R-E-E-T-S------------
+
+
+
+<div class="category"><div id="location">{{{county_nam}}}, {{{state}}}
+<div id="delinquency>{{{4q2009}}}%</div></div></div>
+
+
+Percent of Mortgage Debt Balance 90+ Days Delinquent, Mortgage Debt includes first mortgages, home equity loans and home equity lines of credit.
+
+Only counties with an estimated population of at least 10,000 consumers with credit reports in  fourth quarter 2009 are included.
+
+Source: FRBNY Consumer Credit Panel
+
+
+
+
+
+Fourth Quarter 2009, Percent of Mortgage Debt Balance 90+ Days Delinquent
+
+
+
+
+
+
+
+
+
+*/*   0%   20%   40%   60%   80%  100% 
+ 0.00  2.57  3.60  4.62  6.29 31.69*/*
+
+//---------------------------------------------------------------
+Map{
+background-color:transparent;}
+@purple:#a40f24;
+@red:desaturate(darken(#0b3661,10%),10%);
+@blue:#eb8f00;
+#delinquent {
+  line-color:#afaca0;
+  line-width:.4;
+  line-opacity:1;
+  [4q2008 > 0] {
+    polygon-fill:lighten(@purple,75%);
+  }
+  [4q2008 > 6.29] {
+    polygon-fill:@purple;
+  }
+  [4q2008 <= 6.29] {
+    polygon-fill:lighten(@purple,15%);
+  }  
+  [4q2008 <= 4.62] {
+    polygon-fill:lighten(@purple,30%);
+  }
+  [4q2008 <= 3.6] {
+    polygon-fill:lighten(@purple,45%);
+  }
+  [4q2008 <= 2.57] {
+    polygon-fill:lighten(@purple,60%);
+  } 
+  [4q2008 = 0] {
+    line-opacity:0;
+    polygon-opacity:0;
+  }
+}
+
+//----------------------O-C-C-U-P-Y-A-L-L-S-T-R-E-E-T-S------------
+
+
+
+<div class="category"><div id="location">{{{county_nam}}}, {{{state}}}
+<div id="delinquency>{{{4q2008}}}%</div></div></div>
+
+
+Percent of Mortgage Debt Balance 90+ Days Delinquent, Mortgage Debt includes first mortgages, home equity loans and home equity lines of credit.
+
+Only counties with an estimated population of at least 10,000 consumers with credit reports in  fourth quarter 2008 are included.
+
+Source: FRBNY Consumer Credit Panel
+
+
+
+
+
+Fourth Quarter 2008, Percent of Mortgage Debt Balance 90+ Days Delinquent
+
+
+
+*/*   0%   20%   40%   60%   80%  100% 
+ 0.00  2.57  3.60  4.62  6.29 31.69*/*
+
+//---------------------------------------------------------------
+Map{
+background-color:transparent;}
+@purple:#a40f24;
+@red:desaturate(darken(#0b3661,10%),10%);
+@blue:#eb8f00;
+#delinquent {
+  line-color:#afaca0;
+  line-width:.4;
+  line-opacity:1;
+  [4q2007 > 0] {
+    polygon-fill:lighten(@purple,75%);
+  }
+  [4q2007 > 6.29] {
+    polygon-fill:@purple;
+  }
+  [4q2007 <= 6.29] {
+    polygon-fill:lighten(@purple,15%);
+  }  
+  [4q2007 <= 4.62] {
+    polygon-fill:lighten(@purple,30%);
+  }
+  [4q2007 <= 3.6] {
+    polygon-fill:lighten(@purple,45%);
+  }
+  [4q2007 <= 2.57] {
+    polygon-fill:lighten(@purple,60%);
+  } 
+  [4q2007 = 0] {
+    line-opacity:0;
+    polygon-opacity:0;
+  }
+}
+
+//----------------------O-C-C-U-P-Y-A-L-L-S-T-R-E-E-T-S------------
+
+
+
+<div class="category"><div id="location">{{{county_nam}}}, {{{state}}}
+<div id="delinquency>{{{4q2007}}}%</div></div></div>
+
+
+Percent of Mortgage Debt Balance 90+ Days Delinquent, Mortgage Debt includes first mortgages, home equity loans and home equity lines of credit.
+
+Only counties with an estimated population of at least 10,000 consumers with credit reports in  fourth quarter 2007 are included.
+
+Source: FRBNY Consumer Credit Panel
+
+
+
+
+
+Fourth Quarter 2007, Percent of Mortgage Debt Balance 90+ Days Delinquent
+
+
+
+
+
+
+
+
+
+*/*   0%   20%   40%   60%   80%  100% 
+ 0.00  2.57  3.60  4.62  6.29 31.69*/*
+
+//---------------------------------------------------------------
+Map{
+background-color:transparent;}
+@purple:#a40f24;
+@red:desaturate(darken(#0b3661,10%),10%);
+@blue:#eb8f00;
+#delinquent {
+  line-color:#afaca0;
+  line-width:.4;
+  line-opacity:1;
+  [4q2006 > 0] {
+    polygon-fill:lighten(@purple,75%);
+  }
+  [4q2006 > 6.29] {
+    polygon-fill:@purple;
+  }
+  [4q2006 <= 6.29] {
+    polygon-fill:lighten(@purple,15%);
+  }  
+  [4q2006 <= 4.62] {
+    polygon-fill:lighten(@purple,30%);
+  }
+  [4q2006 <= 3.6] {
+    polygon-fill:lighten(@purple,45%);
+  }
+  [4q2006 <= 2.57] {
+    polygon-fill:lighten(@purple,60%);
+  } 
+  [4q2006 = 0] {
+    line-opacity:0;
+    polygon-opacity:0;
+  }
+}
+
+//----------------------O-C-C-U-P-Y-A-L-L-S-T-R-E-E-T-S------------
+
+
+
+<div class="category"><div id="location">{{{county_nam}}}, {{{state}}}
+<div id="delinquency>{{{4q2006}}}%</div></div></div>
+
+
+Percent of Mortgage Debt Balance 90+ Days Delinquent, Mortgage Debt includes first mortgages, home equity loans and home equity lines of credit.
+
+Only counties with an estimated population of at least 10,000 consumers with credit reports in  fourth quarter 2006 are included.
+
+Source: FRBNY Consumer Credit Panel
+
+
+
+
+
+Fourth Quarter 2006, Percent of Mortgage Debt Balance 90+ Days Delinquent
+
+
+
+
+*/*   0%   20%   40%   60%   80%  100% 
+ 0.00  2.57  3.60  4.62  6.29 31.69*/*
+
+//---------------------------------------------------------------
+Map{
+background-color:transparent;}
+@purple:#a40f24;
+@red:desaturate(darken(#0b3661,10%),10%);
+@blue:#eb8f00;
+#delinquent {
+  line-color:#afaca0;
+  line-width:.4;
+  line-opacity:1;
+  [4q2005 > 0] {
+    polygon-fill:lighten(@purple,75%);
+  }
+  [4q2005 > 6.29] {
+    polygon-fill:@purple;
+  }
+  [4q2005 <= 6.29] {
+    polygon-fill:lighten(@purple,15%);
+  }  
+  [4q2005 <= 4.62] {
+    polygon-fill:lighten(@purple,30%);
+  }
+  [4q2005 <= 3.6] {
+    polygon-fill:lighten(@purple,45%);
+  }
+  [4q2005 <= 2.57] {
+    polygon-fill:lighten(@purple,60%);
+  } 
+  [4q2005 = 0] {
+    line-opacity:0;
+    polygon-opacity:0;
+  }
+}
+
+//----------------------O-C-C-U-P-Y-A-L-L-S-T-R-E-E-T-S------------
+
+
+
+<div class="category"><div id="location">{{{county_nam}}}, {{{state}}}
+<div id="delinquency>{{{4q2005}}}%</div></div></div>
+
+
+Percent of Mortgage Debt Balance 90+ Days Delinquent, Mortgage Debt includes first mortgages, home equity loans and home equity lines of credit.
+
+Only counties with an estimated population of at least 10,000 consumers with credit reports in  fourth quarter 2005 are included.
+
+Source: FRBNY Consumer Credit Panel
+
+
+
+
+
+Fourth Quarter 2005, Percent of Mortgage Debt Balance 90+ Days Delinquent
+
+
+
+
+
+
+
+
+
+
+*/*   0%   20%   40%   60%   80%  100% 
+ 0.00  2.57  3.60  4.62  6.29 31.69*/*
+
+//---------------------------------------------------------------
+Map{
+background-color:transparent;}
+@purple:#a40f24;
+@red:desaturate(darken(#0b3661,10%),10%);
+@blue:#eb8f00;
+#delinquent {
+  line-color:#afaca0;
+  line-width:.4;
+  line-opacity:1;
+  [4q2004 > 0] {
+    polygon-fill:lighten(@purple,75%);
+  }
+  [4q2004 > 6.29] {
+    polygon-fill:@purple;
+  }
+  [4q2004 <= 6.29] {
+    polygon-fill:lighten(@purple,15%);
+  }  
+  [4q2004 <= 4.62] {
+    polygon-fill:lighten(@purple,30%);
+  }
+  [4q2004 <= 3.6] {
+    polygon-fill:lighten(@purple,45%);
+  }
+  [4q2004 <= 2.57] {
+    polygon-fill:lighten(@purple,60%);
+  } 
+  [4q2004 = 0] {
+    line-opacity:0;
+    polygon-opacity:0;
+  }
+}
+
+//----------------------O-C-C-U-P-Y-A-L-L-S-T-R-E-E-T-S------------
+
+
+
+<div class="category"><div id="location">{{{county_nam}}}, {{{state}}}
+<div id="delinquency>{{{4q2004}}}%</div></div></div>
+
+
+Percent of Mortgage Debt Balance 90+ Days Delinquent, Mortgage Debt includes first mortgages, home equity loans and home equity lines of credit.
+
+Only counties with an estimated population of at least 10,000 consumers with credit reports in  fourth quarter 2004 are included.
+
+Source: FRBNY Consumer Credit Panel
+
+
+
+
+
+Fourth Quarter 2004, Percent of Mortgage Debt Balance 90+ Days Delinquent
+
+
+
+
+
+
+
+
+*/*   0%   20%   40%   60%   80%  100% 
+ 0.00  2.57  3.60  4.62  6.29 31.69*/*
+
+//---------------------------------------------------------------
+Map{
+background-color:transparent;}
+@purple:#a40f24;
+@red:desaturate(darken(#0b3661,10%),10%);
+@blue:#eb8f00;
+#delinquent {
+  line-color:#afaca0;
+  line-width:.4;
+  line-opacity:1;
+  [4q2003 > 0] {
+    polygon-fill:lighten(@purple,75%);
+  }
+  [4q2003 > 6.29] {
+    polygon-fill:@purple;
+  }
+  [4q2003 <= 6.29] {
+    polygon-fill:lighten(@purple,15%);
+  }  
+  [4q2003 <= 4.62] {
+    polygon-fill:lighten(@purple,30%);
+  }
+  [4q2003 <= 3.6] {
+    polygon-fill:lighten(@purple,45%);
+  }
+  [4q2003 <= 2.57] {
+    polygon-fill:lighten(@purple,60%);
+  } 
+  [4q2003 = 0] {
+    line-opacity:0;
+    polygon-opacity:0;
+  }
+}
+
+//----------------------O-C-C-U-P-Y-A-L-L-S-T-R-E-E-T-S------------
+
+
+
+<div class="category"><div id="location">{{{county_nam}}}, {{{state}}}
+<div id="delinquency>{{{4q2003}}}%</div></div></div>
+
+
+Percent of Mortgage Debt Balance 90+ Days Delinquent, Mortgage Debt includes first mortgages, home equity loans and home equity lines of credit.
+
+Only counties with an estimated population of at least 10,000 consumers with credit reports in  fourth quarter 2003 are included.
+
+Source: FRBNY Consumer Credit Panel
+
+
+
+
+
+Fourth Quarter 2003, Percent of Mortgage Debt Balance 90+ Days Delinquent
+
+
+
+
+
+
+
+
+*/*   0%   20%   40%   60%   80%  100% 
+ 0.00  2.57  3.60  4.62  6.29 31.69*/*
+
+//---------------------------------------------------------------
+Map{
+background-color:transparent;}
+@purple:#a40f24;
+@red:desaturate(darken(#0b3661,10%),10%);
+@blue:#eb8f00;
+#delinquent {
+  line-color:#afaca0;
+  line-width:.4;
+  line-opacity:1;
+  [4q2002 > 0] {
+    polygon-fill:lighten(@purple,75%);
+  }
+  [4q2002 > 6.29] {
+    polygon-fill:@purple;
+  }
+  [4q2002 <= 6.29] {
+    polygon-fill:lighten(@purple,15%);
+  }  
+  [4q2002 <= 4.62] {
+    polygon-fill:lighten(@purple,30%);
+  }
+  [4q2002 <= 3.6] {
+    polygon-fill:lighten(@purple,45%);
+  }
+  [4q2002 <= 2.57] {
+    polygon-fill:lighten(@purple,60%);
+  } 
+  [4q2002 = 0] {
+    line-opacity:0;
+    polygon-opacity:0;
+  }
+}
+
+//----------------------O-C-C-U-P-Y-A-L-L-S-T-R-E-E-T-S------------
+
+
+
+<div class="category"><div id="location">{{{county_nam}}}, {{{state}}}
+<div id="delinquency>{{{4q2002}}}%</div></div></div>
+
+
+Percent of Mortgage Debt Balance 90+ Days Delinquent, Mortgage Debt includes first mortgages, home equity loans and home equity lines of credit.
+
+Only counties with an estimated population of at least 10,000 consumers with credit reports in  fourth quarter 2002 are included.
+
+Source: FRBNY Consumer Credit Panel
+
+
+
+
+
+Fourth Quarter 2002, Percent of Mortgage Debt Balance 90+ Days Delinquent
+
+
+
+
+
+
+
+
+
+*/*   0%   20%   40%   60%   80%  100% 
+ 0.00  2.57  3.60  4.62  6.29 31.69*/*
+
+//---------------------------------------------------------------
+Map{
+background-color:transparent;}
+@purple:#a40f24;
+@red:desaturate(darken(#0b3661,10%),10%);
+@blue:#eb8f00;
+#delinquent {
+  line-color:#afaca0;
+  line-width:.4;
+  line-opacity:1;
+  [4q2001 > 0] {
+    polygon-fill:lighten(@purple,75%);
+  }
+  [4q2001 > 6.29] {
+    polygon-fill:@purple;
+  }
+  [4q2001 <= 6.29] {
+    polygon-fill:lighten(@purple,15%);
+  }  
+  [4q2001 <= 4.62] {
+    polygon-fill:lighten(@purple,30%);
+  }
+  [4q2001 <= 3.6] {
+    polygon-fill:lighten(@purple,45%);
+  }
+  [4q2001 <= 2.57] {
+    polygon-fill:lighten(@purple,60%);
+  } 
+  [4q2001 = 0] {
+    line-opacity:0;
+    polygon-opacity:0;
+  }
+}
+
+//----------------------O-C-C-U-P-Y-A-L-L-S-T-R-E-E-T-S------------
+
+
+
+<div class="category"><div id="location">{{{county_nam}}}, {{{state}}}
+<div id="delinquency>{{{4q2001}}}%</div></div></div>
+
+
+Percent of Mortgage Debt Balance 90+ Days Delinquent, Mortgage Debt includes first mortgages, home equity loans and home equity lines of credit.
+
+Only counties with an estimated population of at least 10,000 consumers with credit reports in  fourth quarter 2001 are included.
+
+Source: FRBNY Consumer Credit Panel
+
+
+
+
+
+Fourth Quarter 2001, Percent of Mortgage Debt Balance 90+ Days Delinquent
+
+
+
+
+
+
+
+
+*/*   0%   20%   40%   60%   80%  100% 
+ 0.00  2.57  3.60  4.62  6.29 31.69*/*
+
+//---------------------------------------------------------------
+Map{
+background-color:transparent;}
+@purple:#a40f24;
+@red:desaturate(darken(#0b3661,10%),10%);
+@blue:#eb8f00;
+#delinquent {
+  line-color:#afaca0;
+  line-width:.4;
+  line-opacity:1;
+  [4q2000 > 0] {
+    polygon-fill:lighten(@purple,75%);
+  }
+  [4q2000 > 6.29] {
+    polygon-fill:@purple;
+  }
+  [4q2000 <= 6.29] {
+    polygon-fill:lighten(@purple,15%);
+  }  
+  [4q2000 <= 4.62] {
+    polygon-fill:lighten(@purple,30%);
+  }
+  [4q2000 <= 3.6] {
+    polygon-fill:lighten(@purple,45%);
+  }
+  [4q2000 <= 2.57] {
+    polygon-fill:lighten(@purple,60%);
+  } 
+  [4q2000 = 0] {
+    line-opacity:0;
+    polygon-opacity:0;
+  }
+}
+
+//----------------------O-C-C-U-P-Y-A-L-L-S-T-R-E-E-T-S------------
+
+
+
+<div class="category"><div id="location">{{{county_nam}}}, {{{state}}}
+<div id="delinquency>{{{4q2000}}}%</div></div></div>
+
+
+Percent of Mortgage Debt Balance 90+ Days Delinquent, Mortgage Debt includes first mortgages, home equity loans and home equity lines of credit.
+
+Only counties with an estimated population of at least 10,000 consumers with credit reports in  fourth quarter 2000 are included.
+
+Source: FRBNY Consumer Credit Panel
+
+
+
+
+
+Fourth Quarter 2000, Percent of Mortgage Debt Balance 90+ Days Delinquent
+
+
+
+
+
+
+
+
+*/*   0%   20%   40%   60%   80%  100% 
+ 0.00  2.57  3.60  4.62  6.29 31.69*/*
+
+//---------------------------------------------------------------
+Map{
+background-color:transparent;}
+@purple:#a40f24;
+@red:desaturate(darken(#0b3661,10%),10%);
+@blue:#eb8f00;
+#delinquent {
+  line-color:#afaca0;
+  line-width:.4;
+  line-opacity:1;
+  [4q1999 > 0] {
+    polygon-fill:lighten(@purple,75%);
+  }
+  [4q1999 > 6.29] {
+    polygon-fill:@purple;
+  }
+  [4q1999 <= 6.29] {
+    polygon-fill:lighten(@purple,15%);
+  }  
+  [4q1999 <= 4.62] {
+    polygon-fill:lighten(@purple,30%);
+  }
+  [4q1999 <= 3.6] {
+    polygon-fill:lighten(@purple,45%);
+  }
+  [4q1999 <= 2.57] {
+    polygon-fill:lighten(@purple,60%);
+  } 
+  [4q1999 = 0] {
+    line-opacity:0;
+    polygon-opacity:0;
+  }
+}
+
+//----------------------O-C-C-U-P-Y-A-L-L-S-T-R-E-E-T-S------------
+
+
+
+<div class="category"><div id="location">{{{county_nam}}}, {{{state}}}
+<div id="delinquency>{{{4q1999}}}%</div></div></div>
+
+
+Percent of Mortgage Debt Balance 90+ Days Delinquent, Mortgage Debt includes first mortgages, home equity loans and home equity lines of credit.
+
+Only counties with an estimated population of at least 10,000 consumers with credit reports in  fourth quarter 1999 are included.
+
+Source: FRBNY Consumer Credit Panel
+
+
+
+
+
+Fourth Quarter 1999, Percent of Mortgage Debt Balance 90+ Days Delinquent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

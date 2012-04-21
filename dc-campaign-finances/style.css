@@ -1,0 +1,142 @@
+
+
+#states {
+  line-color:#fcfcfc;
+  line-width:0.5;
+  line-join:round;
+  polygon-opacity:1;
+  polygon-fill:rgba(0,0,0,.1);//desaturate(#ffcc00,20%);
+}
+
+
+#wards {
+  line-color:#000;
+  line-width:0.5;
+  line-opacity:.5;
+  line-join:round;
+  polygon-opacity:0;
+  polygon-fill:#000;
+}
+@marker1:2;
+@marker2:3;
+@marker3:4;
+@markercolor:#008fcc;
+//900 1250 2014 3592 6500 10750 63000
+#points {
+  marker-allow-overlap:true;
+  marker-line-color:transparent;
+  marker-opacity:.1;
+  polygon-opacity:.1;
+  marker-fill:@markercolor;
+  [zoom > 11] {
+  [TOTALAMOUN >10750] {
+    marker-width:@marker1 * 7;
+    }
+  [TOTALAMOUN <= 10750]{
+    marker-width:@marker1 * 6;
+    }
+  [TOTALAMOUN <= 6500]{
+    marker-width:@marker1 * 5;
+    }
+  [TOTALAMOUN <= 3592]{
+    marker-width:@marker1 * 4;
+    }
+  [TOTALAMOUN <= 2014]{
+    marker-width:@marker1 * 3;
+    }
+  [TOTALAMOUN <= 1250]{
+    marker-width:@marker1 * 2;
+    }
+  [TOTALAMOUN <= 900]{
+    marker-width:@marker1 * 1;
+    }
+  }
+  [zoom=11] {
+  [TOTALAMOUN >10750]{
+    marker-width:@marker2 * 7;
+    }
+  [TOTALAMOUN <= 10750]{
+    marker-width:@marker2 * 6;
+    }
+  [TOTALAMOUN <= 6500]{
+    marker-width:@marker2 * 5;
+    }
+  [TOTALAMOUN <= 3592]{
+    marker-width:@marker2 * 4;
+    }
+  [TOTALAMOUN <= 2014]{
+    marker-width:@marker2 * 3;
+    }
+  [TOTALAMOUN <= 1250]{
+    marker-width:@marker2 * 2;
+    }
+  [TOTALAMOUN <= 900]{
+    marker-width:@marker2 * 1;
+    }
+  } 
+  [zoom = 10] {
+  [TOTALAMOUN >10750]{
+    marker-width:@marker3 * 7;
+    }
+  [TOTALAMOUN <= 10750]{
+    marker-width:@marker3 * 6;
+    }
+  [TOTALAMOUN <= 6500]{
+    marker-width:@marker3 * 5;
+    }
+  [TOTALAMOUN <= 3592]{
+    marker-width:@marker3 * 4;
+    }
+  [TOTALAMOUN <= 2014]{
+    marker-width:@marker3 * 3;
+    }
+  [TOTALAMOUN <= 1250]{
+    marker-width:@marker3 * 2;
+    }
+  [TOTALAMOUN <= 900]{
+    marker-width:@marker3 * 1;
+    }
+  }
+ [zoom < 10] {
+  [TOTALAMOUN >10750]{
+    marker-width:@marker3 * 5;
+    }
+  [TOTALAMOUN <= 10750]{
+    marker-width:@marker3 * 4;
+    }
+  [TOTALAMOUN <= 6500]{
+    marker-width:@marker3 * 3;
+    }
+  [TOTALAMOUN <= 3592]{
+    marker-width:@marker3 * 2;
+    }
+  [TOTALAMOUN <= 2014]{
+    marker-width:@marker3 * 1;
+    }
+  [TOTALAMOUN <= 1250]{
+    marker-width:@marker3 * .5;
+    }
+  [TOTALAMOUN <= 900]{
+    marker-width:@marker3 * .25;
+    }
+  }
+}
+
+#point2 {
+  marker-width:1;
+  marker-fill:#f45;
+  marker-line-color:#f45;
+  [zoom>=12] {
+    marker-width:2;
+    }
+  marker-allow-overlap:true;
+   ::hightlight {
+    marker-allow-overlap:true;
+    marker-fill:#fff;
+    marker-width:1;
+    marker-opacity:1;
+    marker-line-color:#fff;
+    marker-line-width:0;
+    }
+}
+  

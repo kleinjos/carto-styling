@@ -1,0 +1,56 @@
+
+@dkblue:darken(desaturate(blue, 30%), 20%);
+@purple:#ffffff;
+@fillcoeff:1;
+@red:desaturate(darken(#eb8f00,10%),10%);
+@blue:#eb8f00;
+
+#unempl {
+  line-color:lighten(#000000,30%);
+  line-width:.4;
+  line-opacity:.5;
+  line-join:round;
+  line-cap:round;
+  polygon-fill:@purple;
+  [N_2012 <= 36.2] {
+    polygon-fill:@purple;
+    polygon-opacity:@fillcoeff * 0;
+    ::highlight[N_2012 >11.95] {
+      polygon-fill:rgba(0,0,0,.1);
+      }
+  }
+  [N_2012 <= 11.95] {
+    polygon-fill:@purple;
+    polygon-opacity:@fillcoeff * 0;
+  }  
+  [N_2012 <= 10][N_2012 > 8.7] {
+      polygon-fill:@purple;
+      polygon-opacity:@fillcoeff * .20;
+    }
+  [N_2012 <= 8.7] {
+    polygon-fill:@purple;
+    polygon-opacity:@fillcoeff * .40;
+  }
+  [N_2012 <= 7.4] {
+    polygon-opacity:@fillcoeff * .60;
+  }
+  [N_2012 <= 5.8] {
+    polygon-opacity:@fillcoeff * .80;      
+  }  
+ [N_2012 <= .8] {
+    polygon-fill:@purple;
+    polygon-opacity:@fillcoeff;
+  }
+  [N_2012 = 0] {
+    polygon-opacity:1;
+  }
+}
+
+
+
+#10mlakes {
+  line-color:transparent;
+  line-width:0;
+  polygon-opacity:1;
+  polygon-fill:#ffffff;
+  }
