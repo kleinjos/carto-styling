@@ -1,0 +1,22 @@
+.recline-map .map {
+  height: 500px;
+}
+
+/**********************************************************
+  * Editor
+  *********************************************************/
+
+.recline-map .editor {
+  float: right;
+  width: 200px;
+  padding-left: 0px;
+  margin-left: 10px;
+}
+
+.recline-map .editor form {
+  padding-left: 4px;
+}
+
+.recline-map .editor select {
+	width: 100%;
+}
