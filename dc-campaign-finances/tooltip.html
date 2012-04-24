@@ -1,972 +1,882 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
-	<head>
-		<title></title>
-		<style type='text/css'>
-		.wax-tooltip {
-			position:absolute;
-			top:700px !important;
-			height:300px !important;
-			width:100% !important;
-			left:0px !important;
+<div id='recipient'>${{TotalAmount}} donated from {{address}}</div>
 
-		}
-		.wax-tooltip  div {
-		   top:0px !important;
-		   height:500px !important;
-		   right:20px !important;
-		   font-family: 'Pt Sans', 'Myriad Pro', "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif !important;
-			background:#363636 !important;
-			padding-bottom:10px !important;
-			text-wrap:lowercase !important;
-			overflow-y:visible !important;
-		    color:#fff !important;
-			opacity:1px !important;
-			-webkit-transition:opacity .3s !important;
-			-moz-transition:opacity .3s !important;
-			font-size:14px !important;
-		    background:#363636 !important;
-			z-index:auto !important; 
-		    min-width:100% !important;
-		    max-height:200px !important;
-		}
-		.wax-fade {
-			opacity:0 !important;
-			-webkit-animation-name:wax-fade !important;
-			-webkit-animation-iteration-count:1px !important;
-		}
-		.wax-tooltip.hide {
-			color:#363636 !important;
-		}
-		.wax-tooltip.close {
-			display:block !important;
-			top:0 !important;
-			color:#363636 !important;
-			font-style:italic !important;
-		}
-		.wax-tooltip table {
-			text-align:left !important;			
-		}
-		.wax-tooltip tr {
-			padding-top:10px !important;
-		    margin-left:10px !important;
-		    margin-right:10px !important;
-			font-weight:400 !important;
-		    font-family: 'Pt Sans', 'Myriad Pro', "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif !important;
-			font-size:14px !important;
-		}
-		.wax-tooltip td {
-		    font-family: 'Pt Sans', 'Myriad Pro', "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif !important;
-		    font-weight:400 !important;
-			font-style:bold !important;
-			font-size:14px !important;
-			margin:20px;
-		} 
-		.wax-tooltip a.zoomer {
-			background:#363636 !important;
-		}
-		
-		</style>
-		
-	</head>
-	<body>
-		<div class="ts-maps">
-	<div class="wax-tooltip">
-		<div id="recipient">
-			<table class="donortooltip">
-				<tr>
-					<td id="id">
-						{{{ID}}}
-					</td>
-					<td id="address">
-						{{{ADDRESS}}}
-					</td>
-					<td id="totalamount">
-						{{{TOTALAMOUN}}}
-					</td>
-				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBUTO}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT1}}}
-					</td>
-					<td class="date">
-						{{{DATE1}}}
-					</td>
-					<td class="committee">
-						{{{COMMITTEE1}}}
-					</td>
-				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBUT2}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT2}}}
-					</td>
-					<td class="date">
-						{{{DATE2}}}
-					</td>
-					<td class="committee">
-						{{{COMMITTEE2}}}
+			<table class='donortooltip'>
+				{{#contributor1}}
+				<tr class='entry'>
+					<td class='contribut'>
+						{{contributor1}}
 					</td>
-				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBUT3}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT3}}}
-					</td>
-					<td class="date">
-						{{{DATE3}}}
-					</td>
-					<td class="committee">
-						{{{COMMITTEE3}}}
-					</td>
-				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBUT4}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT4}}}
-					</td>
-					<td class="date">
-						{{{DATE4}}}
-					</td>
-					<td class="committee">
-						{{{COMMITTEE4}}}
-					</td>
-				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBUT5}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT5}}}
-					</td>
-					<td class="date">
-						{{{DATE5}}}
-					</td>
-					<td class="committee">
-						{{{COMMITTEE5}}}
-					</td>
-				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBUT6}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT6}}}
-					</td>
-					<td class="date">
-						{{{DATE6}}}
-					</td>
-					<td class="committee">
-						{{{COMMITTEE6}}}
-					</td>
-				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBUT7}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT7}}}
-					</td>
-					<td class="date">
-						{{{DATE7}}}
-					</td>
-					<td class="committee">
-						{{{COMMITTEE7}}}
-					</td>
-				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBUT8}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT8}}}
-					</td>
-					<td class="date">
-						{{{DATE8}}}
-					</td>
-					<td class="committee">
-						{{{COMMITTEE8}}}
+					<td class='amount'>
+						${{amount1}}
 					</td>
-				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBUT9}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT9}}}
-					</td>
-					<td class="date">
-						{{{DATE9}}}
-					</td>
-					<td class="committee">
-						{{{COMMITTEE9}}}
-					</td>
-				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU10}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT10}}}
+					<td class='date'>
+						{{date1}}
 					</td>
-					<td class="date">
-						{{{DATE10}}}
+					<td class='committee'>
+						{{committee1}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE10}}}
-					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU11}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT11}}}
-					</td>
-					<td class="date">
-						{{{DATE11}}}
+					{{#space1}}
+				<tr class='space'>
+					<td class='space'>
+						{{space1}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE11}}}
-					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU12}}}
+					{{/space1}}
+				{{/contributor1}}
+				{{#contributor2}}
+				<tr class='entry'>
+					<td class='contribut'>
+						{{contributor2}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT12}}}
+					<td class='amount'>
+						${{amount2}}
 					</td>
-					<td class="date">
-						{{{DATE12}}}
+					<td class='date'>
+						{{date2}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE12}}}
+					<td class='committee'>
+						{{committee2}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU13}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT13}}}
-					</td>
-					<td class="date">
-						{{{DATE13}}}
-					</td>
-					<td class="committee">
-						{{{COMMITTE13}}}
+					{{#space2}}
+				<tr class='space'>
+					<td class='space'>
+						{{space2}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU14}}}
+					{{/space2}}
+				{{/contributor2}}
+				{{#contributor3}}
+				<tr class='entry'>
+					<td class='contribut'>
+						{{contributor3}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT14}}}
+					<td class='amount'>
+						${{amount3}}
 					</td>
-					<td class="date">
-						{{{DATE14}}}
+					<td class='date'>
+						{{date3}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE14}}}
+					<td class='committee'>
+						{{committee3}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU15}}}
+					{{#space3}}
+				<tr class='space'>
+					<td class='space'>
+						{{space3}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT15}}}
-					</td>
-					<td class="date">
-						{{{DATE15}}}
-					</td>
-					<td class="committee">
-						{{{COMMITTE15}}}
-					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU16}}}
+					{{/space3}}
+				{{/contributor3}}
+				{{#contributor4}}
+				<tr class='entry'>
+					<td class='contribut'>
+						{{contributor4}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT16}}}
+					<td class='amount'>
+						${{amount4}}
 					</td>
-					<td class="date">
-						{{{DATE16}}}
+					<td class='date'>
+						{{date4}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE16}}}
+					<td class='committee'>
+						{{committee4}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU17}}}
+					{{#space4}}
+				<tr class='space'>
+					<td class='space'>
+						{{space4}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT17}}}
-					</td>
-					<td class="date">
-						{{{DATE17}}}
-					</td>
-					<td class="committee">
-						{{{COMMITTE17}}}
-					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU18}}}
+					{{/space4}}
+				{{/contributor4}}
+				{{#contributor5}}
+				<tr class='entry'>
+					<td class='contribut'>
+						{{contributor5}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT18}}}
+					<td class='amount'>
+						${{amount5}}
 					</td>
-					<td class="date">
-						{{{DATE18}}}
+					<td class='date'>
+						{{date5}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE18}}}
+					<td class='committee'>
+						{{committee5}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU19}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT19}}}
+					{{#space5}}
+				<tr class='space'>
+					<td class='space'>
+						{{space5}}
 					</td>
-					<td class="date">
-						{{{DATE19}}}
-					</td>
-					<td class="committee">
-						{{{COMMITTE19}}}
-					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU20}}}
+					{{/space5}}
+				{{/contributor5}}
+				{{#contributor6}}
+				<tr class='entry'>
+					<td class='contribut'>
+						{{contributor6}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT20}}}
+					<td class='amount'>
+						${{amount6}}
 					</td>
-					<td class="date">
-						{{{DATE20}}}
+					<td class='date'>
+						{{date6}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE20}}}
+					<td class='committee'>
+						{{committee6}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU21}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT21}}}
-					</td>
-					<td class="date">
-						{{{DATE21}}}
+					{{#space6}}
+				<tr class='space'>
+					<td class='space'>
+						{{space6}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE21}}}
-					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU22}}}
+					{{/space6}}
+				{{/contributor6}}
+				{{#contributor7}}
+				<tr class='entry'>
+					<td class='contribut'>
+						{{contributor7}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT22}}}
+					<td class='amount'>
+						${{amount7}}
 					</td>
-					<td class="date">
-						{{{DATE22}}}
+					<td class='date'>
+						{{date7}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE22}}}
+					<td class='committee'>
+						{{committee7}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU23}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT23}}}
-					</td>
-					<td class="date">
-						{{{DATE23}}}
-					</td>
-					<td class="committee">
-						{{{COMMITTE23}}}
+					{{#space7}}
+				<tr class='space'>
+					<td class='space'>
+						{{space7}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU24}}}
+					{{/space7}}
+				{{/contributor7}}
+				{{#contributor8}}
+				<tr class='entry'>
+					<td class='contribut'>
+						{{contributor8}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT24}}}
+					<td class='amount'>
+						${{amount8}}
 					</td>
-					<td class="date">
-						{{{DATE24}}}
+					<td class='date'>
+						{{date8}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE24}}}
+					<td class='committee'>
+						{{committee8}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU25}}}
+					{{#space8}}
+				<tr class='space'>
+					<td class='space'>
+						{{space8}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT25}}}
-					</td>
-					<td class="date">
-						{{{DATE25}}}
-					</td>
-					<td class="committee">
-						{{{COMMITTE25}}}
-					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU26}}}
+					{{/space8}}
+				{{/contributor8}}
+				{{#contributor9}}
+				<tr class='entry'>
+					<td class='contribut'>
+						{{contributor9}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT26}}}
+					<td class='amount'>
+						${{amount9}}
 					</td>
-					<td class="date">
-						{{{DATE26}}}
+					<td class='date'>
+						{{date9}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE26}}}
+					<td class='committee'>
+						{{committee9}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU27}}}
+					{{#space9}}
+				<tr class='space'>
+					<td class='space'>
+						{{space9}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT27}}}
-					</td>
-					<td class="date">
-						{{{DATE27}}}
-					</td>
-					<td class="committee">
-						{{{COMMITTE27}}}
-					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU28}}}
+					{{/space9}}
+				{{/contributor9}}
+				{{#contributor10}}
+				<tr class='entry'>
+					<td class='contribut'>
+						{{contributor10}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT28}}}
+					<td class='amount'>
+						${{amount10}}
 					</td>
-					<td class="date">
-						{{{DATE28}}}
+					<td class='date'>
+						{{date10}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE28}}}
+					<td class='committee'>
+						{{committee10}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU29}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT29}}}
+					{{#space10}}
+				<tr class='space'>
+					<td class='space'>
+						{{space10}}
 					</td>
-					<td class="date">
-						{{{DATE29}}}
-					</td>
-					<td class="committee">
-						{{{COMMITTE29}}}
-					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU30}}}
+					{{/space10}}
+				{{/contributor10}}
+				{{#contributor11}}
+				<tr class='entry'>
+					<td class='contribut'>
+						{{contributor11}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT30}}}
+					<td class='amount'>
+						${{amount11}}
 					</td>
-					<td class="date">
-						{{{DATE30}}}
+					<td class='date'>
+						{{date11}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE30}}}
+					<td class='committee'>
+						{{committee11}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU31}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT31}}}
+					{{#space11}}
+				<tr class='space'>
+					<td class='space'>
+						{{space11}}
 					</td>
-					<td class="date">
-						{{{DATE31}}}
-					</td>
-					<td class="committee">
-						{{{COMMITTE31}}}
-					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU32}}}
+					{{/space11}}
+				{{/contributor11}}
+				{{#contributor12}}
+				<tr class='entry'>
+					<td class='contribut'>
+						{{contributor12}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT32}}}
+					<td class='amount'>
+						${{amount12}}
 					</td>
-					<td class="date">
-						{{{DATE32}}}
+					<td class='date'>
+						{{date12}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE32}}}
+					<td class='committee'>
+						{{committee12}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU33}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT33}}}
-					</td>
-					<td class="date">
-						{{{DATE33}}}
+					{{#space12}}
+				<tr class='space'>
+					<td class='space'>
+						{{space12}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE33}}}
-					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU34}}}
+					{{/space12}}
+				{{/contributor12}}
+				{{#contributor13}}
+				<tr class='entry'>
+					<td class='contribut'>
+						{{contributor13}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT34}}}
+					<td class='amount'>
+						${{amount13}}
 					</td>
-					<td class="date">
-						{{{DATE34}}}
+					<td class='date'>
+						{{date13}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE34}}}
+					<td class='committee'>
+						{{committee13}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU35}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT35}}}
-					</td>
-					<td class="date">
-						{{{DATE35}}}
+					{{#space13}}
+				<tr class='space'>
+					<td class='space'>
+						{{space13}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE35}}}
-					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU36}}}
+					{{/space13}}
+				{{/contributor13}}
+				{{#contributor14}}
+				<tr class='entry'>
+					<td class='contribut'>
+						{{contributor14}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT36}}}
+					<td class='amount'>
+						${{amount14}}
 					</td>
-					<td class="date">
-						{{{DATE36}}}
+					<td class='date'>
+						{{date14}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE36}}}
+					<td class='committee'>
+						{{committee14}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU37}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT37}}}
-					</td>
-					<td class="date">
-						{{{DATE37}}}
-					</td>
-					<td class="committee">
-						{{{COMMITTE37}}}
+					{{#space14}}
+				<tr class='space'>
+					<td class='space'>
+						{{space14}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU38}}}
+					{{/space14}}
+				{{/contributor14}}
+				{{#contributor15}}
+				<tr class='entry'>
+					<td class='contribut'>
+						{{contributor15}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT38}}}
+					<td class='amount'>
+						${{amount15}}
 					</td>
-					<td class="date">
-						{{{DATE38}}}
+					<td class='date'>
+						{{date15}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE38}}}
+					<td class='committee'>
+						{{committee15}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU39}}}
+					{{#space15}}
+				<tr class='space'>
+					<td class='space'>
+						{{space15}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT39}}}
-					</td>
-					<td class="date">
-						{{{DATE39}}}
-					</td>
-					<td class="committee">
-						{{{COMMITTE39}}}
-					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU40}}}
+					{{/space15}}
+				{{/contributor15}}
+				{{#contributor16}}
+				<tr class='entry'>
+					<td class='contribut'>
+						{{contributor16}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT40}}}
+					<td class='amount'>
+						${{amount16}}
 					</td>
-					<td class="date">
-						{{{DATE40}}}
+					<td class='date'>
+						{{date16}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE40}}}
+					<td class='committee'>
+						{{committee16}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU41}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT41}}}
+					{{#space16}}
+				<tr class='space'>
+					<td class='space'>
+						{{space16}}
 					</td>
-					<td class="date">
-						{{{DATE41}}}
-					</td>
-					<td class="committee">
-						{{{COMMITTE41}}}
-					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU42}}}
+					{{/space16}}
+				{{/contributor16}}
+				{{#contributor17}}
+				<tr class='entry'>
+					<td class='contribut'>
+						{{contributor17}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT42}}}
+					<td class='amount'>
+						${{amount17}}
 					</td>
-					<td class="date">
-						{{{DATE42}}}
+					<td class='date'>
+						{{date17}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE42}}}
+					<td class='committee'>
+						{{committee17}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU43}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT43}}}
-					</td>
-					<td class="date">
-						{{{DATE43}}}
+					{{#space17}}
+				<tr class='space'>
+					<td class='space'>
+						{{space17}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE43}}}
-					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU44}}}
+					{{/space17}}
+				{{/contributor17}}
+				{{#contributor18}}
+				<tr class='entry'>
+					<td class='contribut'>
+						{{contributor18}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT44}}}
+					<td class='amount'>
+						${{amount18}}
 					</td>
-					<td class="date">
-						{{{DATE44}}}
+					<td class='date'>
+						{{date18}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE44}}}
+					<td class='committee'>
+						{{committee18}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU45}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT45}}}
-					</td>
-					<td class="date">
-						{{{DATE45}}}
+					{{#space18}}
+				<tr class='space'>
+					<td class='space'>
+						{{space18}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE45}}}
-					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU46}}}
+					{{/space18}}
+				{{/contributor18}}
+				{{#contributor19}}
+				<tr class='entry'>
+					<td class='contribut'>
+						{{contributor19}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT46}}}
+					<td class='amount'>
+						${{amount19}}
 					</td>
-					<td class="date">
-						{{{DATE46}}}
+					<td class='date'>
+						{{date19}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE46}}}
+					<td class='committee'>
+						{{committee19}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU47}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT47}}}
-					</td>
-					<td class="date">
-						{{{DATE47}}}
-					</td>
-					<td class="committee">
-						{{{COMMITTE47}}}
+					{{#space19}}
+				<tr class='space'>
+					<td class='space'>
+						{{space19}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU48}}}
+					{{/space19}}
+				{{/contributor19}}
+				{{#contributor20}}
+				<tr class='entry'>
+					<td class='contribut'>
+						{{contributor20}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT48}}}
+					<td class='amount'>
+						${{amount20}}
 					</td>
-					<td class="date">
-						{{{DATE48}}}
+					<td class='date'>
+						{{date20}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE48}}}
+					<td class='committee'>
+						{{committee20}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU49}}}
+					{{#space20}}
+				<tr class='space'>
+					<td class='space'>
+						{{space20}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT49}}}
-					</td>
-					<td class="date">
-						{{{DATE49}}}
-					</td>
-					<td class="committee">
-						{{{COMMITTE49}}}
-					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU50}}}
+					{{/space20}}
+				{{/contributor20}}
+				{{#contributor21}}
+				<tr class='entry'>
+					<td class='contribut'>
+						{{contributor21}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT50}}}
+					<td class='amount'>
+						${{amount21}}
 					</td>
-					<td class="date">
-						{{{DATE50}}}
+					<td class='date'>
+						{{date21}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE50}}}
+					<td class='committee'>
+						{{committee21}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU51}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT51}}}
+					{{#space21}}
+				<tr class='space'>
+					<td class='space'>
+						{{space21}}
 					</td>
-					<td class="date">
-						{{{DATE51}}}
-					</td>
-					<td class="committee">
-						{{{COMMITTE51}}}
-					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU52}}}
+					{{/space21}}
+				{{/contributor21}}
+				{{#contributor22}}
+				<tr class='entry'>
+					<td class='contribut'>
+						{{contributor22}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT52}}}
+					<td class='amount'>
+						${{amount22}}
 					</td>
-					<td class="date">
-						{{{DATE52}}}
+					<td class='date'>
+						{{date22}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE52}}}
+					<td class='committee'>
+						{{committee22}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU53}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT53}}}
-					</td>
-					<td class="date">
-						{{{DATE53}}}
+					{{#space22}}
+				<tr class='space'>
+					<td class='space'>
+						{{space22}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE53}}}
-					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU54}}}
+					{{/space22}}
+				{{/contributor22}}
+				{{#contributor23}}
+				<tr class='entry'>
+					<td class='contribut'>
+						{{contributor23}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT54}}}
+					<td class='amount'>
+						${{amount23}}
 					</td>
-					<td class="date">
-						{{{DATE54}}}
+					<td class='date'>
+						{{date23}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE54}}}
+					<td class='committee'>
+						{{committee23}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU55}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT55}}}
-					</td>
-					<td class="date">
-						{{{DATE55}}}
+					{{#space23}}
+				<tr class='space'>
+					<td class='space'>
+						{{space23}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE55}}}
-					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU56}}}
+					{{/space23}}
+				{{/contributor23}}
+				{{#contributor24}}
+				<tr class='entry'>
+					<td class='contribut'>
+						{{contributor24}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT56}}}
+					<td class='amount'>
+						${{amount24}}
 					</td>
-					<td class="date">
-						{{{DATE56}}}
+					<td class='date'>
+						{{date24}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE56}}}
+					<td class='committee'>
+						{{committee24}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU57}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT57}}}
-					</td>
-					<td class="date">
-						{{{DATE57}}}
-					</td>
-					<td class="committee">
-						{{{COMMITTE57}}}
+					{{#space24}}
+				<tr class='space'>
+					<td class='space'>
+						{{space24}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU58}}}
+					{{/space24}}
+				{{/contributor24}}
+				{{#contributor25}}
+				<tr class='entry'>
+					<td class='contribut'>
+						{{contributor25}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT58}}}
+					<td class='amount'>
+						${{amount25}}
 					</td>
-					<td class="date">
-						{{{DATE58}}}
+					<td class='date'>
+						{{date25}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE58}}}
+					<td class='committee'>
+						{{committee25}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU59}}}
+					{{#space25}}
+				<tr class='space'>
+					<td class='space'>
+						{{space25}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT59}}}
-					</td>
-					<td class="date">
-						{{{DATE59}}}
-					</td>
-					<td class="committee">
-						{{{COMMITTE59}}}
-					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU60}}}
+					{{/space25}}
+				{{/contributor25}}
+				{{#contributor26}}
+				<tr class='entry'>
+					<td class='contribut'>
+						{{contributor26}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT60}}}
+					<td class='amount'>
+						${{amount26}}
 					</td>
-					<td class="date">
-						{{{DATE60}}}
+					<td class='date'>
+						{{date26}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE60}}}
+					<td class='committee'>
+						{{committee26}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU61}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT61}}}
+					{{#space26}}
+				<tr class='space'>
+					<td class='space'>
+						{{space26}}
 					</td>
-					<td class="date">
-						{{{DATE61}}}
-					</td>
-					<td class="committee">
-						{{{COMMITTE61}}}
-					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU62}}}
+					{{/space26}}
+				{{/contributor26}}
+				{{#contributor27}}
+				<tr class='entry'>
+					<td class='contribut'>
+						{{contributor27}}
 					</td>
-					<td class="amount">
-						{{{AMOUNT62}}}
+					<td class='amount'>
+						${{amount27}}
 					</td>
-					<td class="date">
-						{{{DATE62}}}
+					<td class='date'>
+						{{date27}}
 					</td>
-					<td class="committee">
-						{{{COMMITTE62}}}
+					<td class='committee'>
+						{{committee27}}
 					</td>
 				</tr>
-				<tr class="entry">
-					<td class="contribut">
-						{{{CONTRIBU63}}}
-					</td>
-					<td class="amount">
-						{{{AMOUNT63}}}
-					</td>
-					<td class="date">
-						{{{DATE63}}}
+					{{#space27}}
+				<tr class='space'>
+					<td class='space'>
+						{{space27}}
 					</td>
 				</tr>
+					{{/space27}}
+				{{/contributor27}}
 			</table>
-		</div>
-		</div>
-		</div>
-	</body>
-</html>
+<style type='text/css'>
+.wax-tooltip {
+	max-width: 100% !important;
+	max-height: 20% !important;
+	position: absolute !important;
+	bottom: 0px !important;
+	right: 0px !important;
+	top: 80% !important;
+	width: 100% !important;
+	color: #ffffff !important;
+	overflow-y: visible !important;
+	overflow-x: hidden !important;
+	padding-bottom: 0px !important;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	padding-top: 0px !important;
+	width: 100% !important;
+	opacity: 1 !important;
+	margin-top: 5px !important;
+	margin-bottom: 5px !important;
+	margin-right: 5px !important;
+	margin-left: 5px !important;
+	background: #363636 !important;
+	border-bottom-color: white !important;
+	border-bottom-left-radius: 3px !important;
+	border-bottom-right-radius: 3px !important;
+	border-bottom-style: solid !important;
+	border-bottom-width: 0px !important;
+	border-left-color: white !important;
+	border-left-style: solid !important;
+	border-left-width: 0px !important;
+	border-right-color: white !important;
+	border-right-style: solid !important;
+	border-right-width: 0px !important;
+	border-top-color: white !important;
+	border-top-left-radius: 3px !important;
+	border-top-right-radius: 3px !important;
+	border-top-style: solid !important;
+	border-top-width: 0px !important;
+	border-radius: 3px !important;
+	-moz-border-radius: 3px !important;
+	-webkit-border-radius: 3px !important;
+}
+
+/*.wax-tooltip .outer  {
+	max-width: 100% !important;
+	max-height: 100% !important;
+	min-height:auto !important;
+	height: auto !important;
+	position: absolute !important;
+	bottom: 0px !important;
+	right: 0px !important;
+	left: 0px !important;
+	top: 0px !important;
+	padding-bottom: 0px !important;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	padding-top: 0px !important;
+	background-color: #363636 !important;
+	border-bottom-color: white !important;
+	border-bottom-left-radius: 3px !important;
+	border-bottom-right-radius: 3px !important;
+	border-bottom-style: solid !important;
+	border-bottom-width: 0px !important;
+	border-left-color: white !important;
+	border-left-style: solid !important;
+	border-left-width: 0px !important;
+	border-right-color: white !important;
+	border-right-style: solid !important;
+	border-right-width: 0px !important;
+	border-top-color: white !important;
+	border-top-left-radius: 3px !important;
+	border-top-right-radius: 3px !important;
+	border-top-style: solid !important;
+	border-top-width: 0px !important;
+	border-radius: 3px !important;
+	-moz-border-radius: 3px !important;
+	-webkit-border-radius: 3px !important;
+	background: #363636 !important;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+	margin-right: 0px !important;
+	margin-left: 0px !important;
+}
+
+
+.wax-tooltip .inner {
+	max-height:100% !important;
+	position: absolute !important;
+	bottom: 0px !important;
+	right: 0px !important;
+	left: 0px !important;
+	top: 0px !important;
+	padding-bottom: 0px !important;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	padding-top: 0px !important;
+	width: 100% !important;
+	opacity: 1 !important;
+	background-color: #363636 !important;
+	margin-top: 5px !important;
+	margin-bottom: 5px !important;
+	margin-right: 5px !important;
+	margin-left: 5px !important;
+	border-bottom-color: white !important;
+	border-bottom-left-radius: 3px !important;
+	border-bottom-right-radius: 3px !important;
+	border-bottom-style: solid !important;
+	border-bottom-width: 0px !important;
+	border-left-color: white !important;
+	border-left-style: solid !important;
+	border-left-width: 0px !important;
+	border-right-color: white !important;
+	border-right-style: solid !important;
+	border-right-width: 0px !important;
+	border-top-color: white !important;
+	border-top-left-radius: 3px !important;
+	border-top-right-radius: 3px !important;
+	border-top-style: solid !important;
+	border-top-width: 0px !important;
+	border-radius: 3px !important;
+	-moz-border-radius: 3px !important;
+	-webkit-border-radius: 3px !important;*/
+}
+.wax-tooltip #recipient {
+	font-family: 'Pt Sans', 'Myriad Pro', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', 'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif !important;
+	position:absolute !important;
+	margin-right:60px !important;
+	font-size:14px !important;
+	width:100% !important;
+	}
+
+.wax-tooltip .donortooltip {
+	position: absolute !important;
+	background-color: #363636 !important;
+	top: 17px !important;
+	left: 0px !important;
+	right: 0px !important;
+	margin-top: 5px !important;
+	margin-bottom: 0px !important;
+	margin-right: 0px !important;
+	margin-left: 0px !important;
+	max-height: 100% !important;
+	font-family: 'Pt Sans', 'Myriad Pro', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', 'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif !important;
+	background: #363636 !important;
+	text-wrap: lowercase !important;
+	overflow-y: visible !important;
+	color: #fff !important;
+	opacity: 1px !important;
+	-webkit-transition: opacity .3s !important;
+	-moz-transition: opacity .3s !important;
+	font-size: 14px !important;
+	z-index: auto !important;
+	min-width: 90% !important;
+	max-width: 100% !important;
+	width: 95% !important;
+	min-height:60% !important;
+	height:auto !important;
+	border: 0px solid #363636 !important;
+	padding: 0px solid #363636 !important;
+	margin: 10px !important;
+	padding-bottom: 0px !important;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	padding-top: 0px !important;
+	overflow-y: visible !important;
+	overflow-x: visible !important;
+}
+
+.wax-fade {
+	color: #363636 !important;
+	-webkit-animation-name: wax-fade !important;
+	-webkit-animation-iteration-count: 1px !important;
+}
+.wax-tooltip.hide {
+	color: #363636 !important;
+	max-height:150px !important;
+	height:150px !important;
+	opacity:1 !important;
+}
+.wax-tooltip.close {
+	display: block !important;
+	top: 0 !important;
+	right: 30px !important;
+	color: #363636 !important;
+	font-style: italic !important;
+}
+.wax-tooltip table {
+	max-height:100% !important
+	min-height:60% !important;
+	text-align: left !important;
+	padding-bottom: 0px !important;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	padding-top: 0px !important;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+	margin-right: 0px !important;
+	margin-left: 0px !important;
+	color: #363636 !important;
+	font-weight: 400 !important;
+	font-family: 'Pt Sans', 'Myriad Pro', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', 'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif !important;
+	font-size: 14px !important;
+	cell-spacing:3;
+	height:auto !important;
+	overflow-y: visible !important;
+	position:relative !important;	
+}
+
+.wax-tooltip td,
+.wax-tooltip tr {
+	font-family: 'Pt Sans', 'Myriad Pro', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', 'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif !important;
+	font-weight: 400 !important;
+	background-color: #363636 !important;
+	font-style: bold !important;
+	font-size: 14px !important;
+	line-height: 14px !important;
+	color:#fff !important;
+	border-color:#363636 !important;
+	position:relative !important;		
+}
+
+ .wax-tooltip .donortooltip table .addresstable tr, {
+	margin-bottom:10px !important;
+	background-color:transparent !important;
+	color:#fff !important;
+}
+	top:17px !important;
+
+
+.wax-tooltip tr:hover {
+	color: #008fcc !important;
+	background-color:#fff !important;
+}
+
+.wax-tooltip td.space {
+	height: 15px !important;
+	color:#363636 !important;
+	background-color: #363636 !important;
+	border-right:0px !important;
+	border-left:0px !important;
+}
+
+.wax-tooltip a.zoomer {
+	background: #363636 !important;
+}
+
+.wax-tooltip .even {
+	background-color:#008fcc !important;
+}
+
+.wax-tooltip .odd {
+	background-color: #363636 !important;
+	color:#fff !important;
+}
+
+</style>
