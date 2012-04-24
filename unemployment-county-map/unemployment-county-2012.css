@@ -1,14 +1,14 @@
-//-------------------------------WHOSE STREETS-------------------------
 
-//-------------------------------WHOSE STREETS-------------------------
+/*.8 5.8 7.4 8.7 10 11.95 36.2*/
 
+Map {
+  background-color:#C0C0C0;
+}
 
-//.8 5.8 7.4 8.7 10 11.95 36.2//
-Map{
-background-color:#C0C0C0;}
 @purple:#336699;
 @red:desaturate(darken(#eb8f00,10%),10%);
 @blue:#eb8f00;
+
 #unempl {
   ::highlight {
   line-color:#C0C0C0;
@@ -46,4 +46,3 @@ background-color:#C0C0C0;}
   }
   }
 }
-//----------------------O-C-C-U-P-Y-A-L-L-S-T-R-E-E-T-S------------
