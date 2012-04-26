@@ -6,7 +6,7 @@
 	{{/id}}
 	{{#Title}}
 	<div class="Title">
-		{{{Title}}}
+		<a href="{{{Occupy Directory URL}}}">{{{Title}}}</a>
 	</div>
 	{{/Title}}
 	{{#Founded}}
@@ -176,6 +176,7 @@
 REGEX Used for find and replace 
 find: (\{\{\{)(.*)(\}\}\})
 Replace: \t\{\{#\2\}\}\r\t<div class="\2">\r\t\t\{\{\{\2\}\}\}\r\t</div>\r\t\{\{/\2\}\}
+
 <div class="overlaycontainer">
 {{{id}}}
 {{{Title}}}
