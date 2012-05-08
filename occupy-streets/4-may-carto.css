@@ -1,0 +1,660 @@
+@brown:#ACA68a;
+@background:lighten(desaturate(@brown, 100%),20%);
+@yellow:#fffc00;
+@white:#ffffff;
+@opacity:.1;
+@ltopacity:.6;
+@zoomlineco:@yellow;
+@zoomlineopac:.8;
+@zoomlinewidth:8;
+@zoomwidth:.6;
+@width:1;
+@on:1;
+@off:0;
+@gradient:#525252;
+@polygon:#282828;//darken(@background,65%);//#363636;//#ebebeb;//#363636;/
+@water:#3a3a3a;//c9c9c9;
+
+
+#countries[SOVEREIGNT != "Canada"][SOVEREIGNT != "United States of America"], #uscanada[NAME_0="United States of America"],#uscanada[NAME_0="Canada"] {
+  line-width:1;
+  line-color:darken(@polygon,70%);
+  line-join: round;  
+  polygon-fill:#242424;//darken(@polygon,70%);
+  polygon-opacity: 1;
+ /* [zoom >= 7] {
+    polygon-fill:transparent;
+    line-color:transparent;
+    }*/
+  [zoom < 7], [zoom >=7] {
+    polygon-fill:@polygon;
+    line-color:@polygon;
+    }
+  [zoom <= 5 ] {
+    polygon-fill:@polygon;
+    line-color:@polygon;
+    }
+  [zoom <= 3] {
+    polygon-fill:@polygon;
+    line-color:@polygon;
+    }
+  [zoom <= 1] {
+    polygon-fill:@polygon;
+    line-color:@polygon;
+    }
+  }
+
+#cover {
+ /* [zoom >= 7] {
+    polygon-fill:transparent;
+    }
+  [zoom < 7] {*/
+  polygon-fill:desaturate(lighten(@polygon,5%),25%);
+ /* }*/
+  }
+
+#stateslakes, #countries[SOVEREIGNT="Morocco"], #countries[ADMIN="Mauritania"] {
+  line-width:1;
+  line-color:darken(@polygon,70%);
+  line-join: round;  
+  polygon-fill:darken(@polygon,70%);
+  polygon-opacity: 1;
+ /* [zoom >= 7] {
+    polygon-opacity:@off;
+    line-opacity:@off;
+    }*/
+  }
+#occupy {
+   [zoom < 3] {
+    marker-allow-overlap:true;
+  ::highlight{
+    marker-line-color:@yellow;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@opacity*1;
+    marker-line-color:@yellow;
+    marker-width:@width*2;
+    marker-line-width:@width;
+    marker-line-opacity:@opacity*1;
+    }
+    ::highlight2 {
+    marker-line-color:@yellow;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@opacity*2;
+    marker-line-color:@yellow;
+    marker-width:@width*2;
+    marker-line-width:@width;
+    marker-line-opacity:@opacity*2;
+    }
+    ::highlight3 {
+    marker-line-color:@yellow;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@opacity*3;
+    marker-line-color:@yellow;
+    marker-width:@width*.5;
+    marker-line-width:@width;
+    marker-line-opacity:@opacity*3;
+    }
+   marker-allow-overlap:true;
+   marker-fill:lighten(@yellow,55%);
+   marker-opacity:.8;
+   marker-width:.25;
+   marker-line-color:#ffffff;
+  }
+  [zoom <= 4] {
+    marker-allow-overlap:true;
+  ::highlight{
+    marker-line-color:@yellow;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@opacity*1;
+    marker-line-color:@yellow;
+    marker-width:@width*3;
+    marker-line-width:@width;
+    marker-line-opacity:@opacity*1;
+    }
+    ::highlight2 {
+    marker-line-color:@yellow;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@opacity*2;
+    marker-line-color:@yellow;
+    marker-width:@width*2;
+    marker-line-width:@width;
+    marker-line-opacity:@opacity*2;
+    }
+    ::highlight3 {
+    marker-line-color:@yellow;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@opacity*3;
+    marker-line-color:@yellow;
+    marker-width:@width*1;
+    marker-line-width:@width;
+    marker-line-opacity:@opacity*3;
+    }
+   marker-allow-overlap:true;
+   marker-fill:lighten(@yellow,55%);
+   marker-opacity:.8;
+   marker-width:.5;
+   marker-line-color:#ffffff;
+  }
+ [zoom > 4] {
+    marker-allow-overlap:true;
+  ::highlight{
+    marker-line-color:@yellow;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@opacity*1;
+    marker-line-color:@yellow;
+    marker-width:@width*7;
+    marker-line-width:@width;
+    marker-line-opacity:@opacity*1;
+    }
+    ::highlight2 {
+    marker-line-color:@yellow;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@opacity*2;
+    marker-line-color:@yellow;
+    marker-width:@width*5;
+    marker-line-width:@width;
+    marker-line-opacity:@opacity*2;
+    }
+    ::highlight3 {
+    marker-line-color:@yellow;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@opacity*3;
+    marker-line-color:@yellow;
+    marker-width:@width*3;
+    marker-line-width:@width;
+    marker-line-opacity:@opacity*3;
+    }
+   marker-allow-overlap:true;
+   marker-fill:lighten(@yellow,55%);
+   marker-opacity:.4;
+   marker-width:1;
+   marker-line-color:#ffffff;
+  }
+  
+  [zoom >= 5] {
+    marker-allow-overlap:true;
+  ::highlight{
+    marker-line-color:@yellow;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@opacity*1;
+    marker-line-color:@yellow;
+    marker-width:@width*6;
+    marker-line-width:@width;
+    marker-line-opacity:@opacity*1;
+    }
+    ::highlight2 {
+    marker-line-color:@yellow;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@opacity*2;
+    marker-line-color:@yellow;
+    marker-width:@width*4;
+    marker-line-width:@width;
+    marker-line-opacity:@opacity*2;
+    }
+    ::highlight3 {
+    marker-line-color:@yellow;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@opacity*3;
+    marker-line-color:@yellow;
+    marker-width:@width*2;
+    marker-line-width:@width;
+    marker-line-opacity:@opacity*3;
+    }
+   marker-allow-overlap:true;
+   marker-fill:lighten(@yellow,55%);
+   marker-opacity:.4;
+   marker-width:.5;
+   marker-line-color:#ffffff;
+  }
+  [zoom > 6] {
+    marker-allow-overlap:true;
+  ::highlight{
+    marker-line-color:@yellow;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@opacity*1;
+    marker-line-color:@yellow;
+    marker-width:@width*7;
+    marker-line-width:@width;
+    marker-line-opacity:@opacity*1;
+    }
+    ::highlight2 {
+    marker-line-color:@yellow;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@opacity*2;
+    marker-line-color:@yellow;
+    marker-width:@width*5;
+    marker-line-width:@width;
+    marker-line-opacity:@opacity*2;
+    }
+    ::highlight3 {
+    marker-line-color:@yellow;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@opacity*3;
+    marker-line-color:@yellow;
+    marker-width:@width*3;
+    marker-line-width:@width;
+    marker-line-opacity:@opacity*3;
+    }
+   marker-allow-overlap:true;
+   marker-fill:lighten(@yellow,55%);
+   marker-opacity:.4;
+   marker-width:1;
+   marker-line-color:#ffffff;
+  }
+  [zoom >= 8] {
+  ::highlight {
+    marker-line-color:@yellow;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@opacity*1;
+    marker-line-color:@yellow;
+    marker-width:@width*7;
+    marker-line-width:@width;
+    marker-line-opacity:@opacity*1;
+    }
+    ::highlight2 {
+    marker-line-color:@yellow;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@opacity*2;
+    marker-line-color:@yellow;
+    marker-width:@width*5;
+    marker-line-width:@width;
+    marker-line-opacity:@opacity*2;
+    }
+  ::highlight3 {
+    marker-line-color:@yellow;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@opacity*3;
+    marker-line-color:@yellow;
+    marker-width:@width*3;
+    marker-line-width:@width;
+    marker-line-opacity:@opacity*3;
+      }
+   marker-allow-overlap:true;
+   marker-fill:lighten(@yellow,55%);
+   marker-opacity:.4;
+   marker-width:1;
+   marker-line-color:#ffffff;
+    ::again {
+      marker-width:1;
+      marker-fill:white;
+      marker-opacity:1;
+      }
+    }
+/* NENEENENENENNENENENNWWW */
+  [zoom>=9] {
+  ::highlight {
+    marker-line-color:@yellow;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:.2;
+    marker-line-color:@yellow;
+    marker-width:@width*13;
+    marker-line-width:@width*11;
+    marker-line-opacity:0;
+    }
+    ::highlight2 {
+    marker-line-color:@yellow;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:.2;
+    marker-line-color:@yellow;
+    marker-width:@width*9;
+    marker-line-width:@width*5;
+    marker-line-opacity:0;
+    }
+    ::highlight3 {
+    marker-line-color:@yellow;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:.4;
+    marker-line-color:@yellow;
+    marker-width:@width*5;
+    marker-line-width:@width*3;
+    marker-line-opacity:0;
+      }
+   marker-allow-overlap:true;
+   marker-fill:lighten(@yellow,55%);
+   marker-opacity:.8;
+   marker-width:2;
+   marker-line-width:1;
+   marker-line-color:#ffffff;
+   marker-line-opacity:0;
+    ::again {
+      marker-width:3;
+      marker-fill:white;
+      marker-opacity:1;
+      }
+    }
+/*--------------------------------------*/
+  [zoom >= 10] {
+  ::highlight {
+    marker-line-color:@zoomlineco;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@ltopacity;
+    marker-line-color:@zoomlineco;
+    marker-width:@zoomwidth*12;
+    marker-line-width:@zoomlinewidth;
+    marker-line-color:@zoomlineopac;
+    }
+  ::highlight2 {
+    marker-line-color:@zoomlineco;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@ltopacity;
+    marker-line-color:@ltopacity;
+    marker-width:@zoomwidth*10;
+    marker-line-width:@zoomlinewidth;
+    marker-line-color:@zoomlineopac;
+    }
+  ::highlight3 {
+    marker-line-color:@zoomlineco;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@ltopacity;
+    marker-line-color:@ltopacity;
+    marker-width:@zoomwidth*8;
+    marker-line-width:@zoomlinewidth;
+    marker-line-color:@zoomlineopac;
+    }
+    marker-width:0;
+    }
+  [zoom >= 11] {
+  ::highlight {
+    marker-line-color:@zoomlineco;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@ltopacity;
+    marker-line-color:@zoomlineco;
+    marker-width:@zoomwidth*36;
+    marker-line-width:@zoomlinewidth;
+    marker-line-color:@zoomlineopac;
+    }
+    ::highlight2 {
+    marker-line-color:@zoomlineco;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@ltopacity;
+    marker-line-color:@ltopacity;
+    marker-width:@zoomwidth*34;
+    marker-line-width:@zoomlinewidth;
+    marker-line-color:@zoomlineopac;
+    }
+  ::highlight3 {
+    marker-line-color:@zoomlineco;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@ltopacity;
+    marker-line-color:@ltopacity;
+    marker-width:@zoomwidth*32;
+    marker-line-width:@zoomlinewidth;
+    marker-line-color:@zoomlineopac;
+    }
+    marker-width:0;
+    }
+/* NENEENENENENNENENENNWWW */
+  [zoom>=12] {
+  ::highlight {
+    marker-line-color:@zoomlineco;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@ltopacity;
+    marker-line-color:@zoomlineco;
+    marker-width:@zoomwidth*40;
+    marker-line-width:@zoomlinewidth;
+    marker-line-color:@zoomlineopac;
+    }
+    ::highlight2 {
+    marker-line-color:@zoomlineco;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@ltopacity;
+    marker-line-color:@ltopacity;
+    marker-width:@zoomwidth*38;
+    marker-line-width:@zoomlinewidth;
+    marker-line-color:@zoomlineopac;
+    }
+    ::highlight3 {
+    marker-line-color:@zoomlineco;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@ltopacity;
+    marker-line-color:@ltopacity;
+    marker-width:@zoomwidth*36;
+    marker-line-width:@zoomlinewidth;
+    marker-line-color:@zoomlineopac;
+    }
+    marker-width:0;
+    }
+/*--------------------------------------*/
+/* NENEENENENENNENENENNWWW */
+  [zoom>=13] {
+  ::highlight {
+    marker-line-color:@zoomlineco;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@ltopacity;
+    marker-line-color:@zoomlineco;
+    marker-width:@zoomwidth*50;
+    marker-line-width:@zoomlinewidth;
+    marker-line-color:@zoomlineopac;
+    }
+    ::highlight2 {
+    marker-line-color:@zoomlineco;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@ltopacity;
+    marker-line-color:@ltopacity;
+    marker-width:@zoomwidth*47;
+    marker-line-width:@zoomlinewidth;
+    marker-line-color:@zoomlineopac;
+    }
+    ::highlight3 {
+    marker-line-color:@zoomlineco;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@ltopacity;
+    marker-line-color:@ltopacity;
+    marker-width:@zoomwidth*44;
+    marker-line-width:@zoomlinewidth;
+    marker-line-color:@zoomlineopac;
+    }
+    marker-width:0;
+    }
+/*--------------------------------------*/
+/* NENEENENENENNENENENNWWW */
+  [zoom>=14] {
+  ::highlight {
+    marker-line-color:@zoomlineco;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@ltopacity;
+    marker-line-color:@zoomlineco;
+    marker-width:@zoomwidth*60;
+    marker-line-width:@zoomlinewidth;
+    marker-line-color:@zoomlineopac;
+    }
+    ::highlight2 {
+    marker-line-color:@zoomlineco;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@ltopacity;
+    marker-line-color:@ltopacity;
+    marker-width:@zoomwidth*55;
+    marker-line-width:@zoomlinewidth;
+    marker-line-color:@zoomlineopac;
+    }
+    ::highlight3 {
+    marker-line-color:@zoomlineco;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@ltopacity;
+    marker-line-color:@ltopacity;
+    marker-width:@zoomwidth*50;
+    marker-line-width:@zoomlinewidth;
+    marker-line-color:@zoomlineopac;
+    }
+    marker-width:0;
+    }
+/*--------------------------------------*/
+/* NENEENENENENNENENENNWWW */
+  [zoom>=15] {
+  ::highlight {
+    marker-line-color:@zoomlineco;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@ltopacity;
+    marker-line-color:@zoomlineco;
+    marker-width:@zoomwidth*70;
+    marker-line-width:@zoomlinewidth;
+    marker-line-color:@zoomlineopac;
+    }
+    ::highlight2 {
+    marker-line-color:@zoomlineco;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@ltopacity;
+    marker-line-color:@ltopacity;
+    marker-width:@zoomwidth*65;
+    marker-line-width:@zoomlinewidth;
+    marker-line-color:@zoomlineopac;
+    }
+    ::highlight3 {
+    marker-line-color:@zoomlineco;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@ltopacity;
+    marker-line-color:@ltopacity;
+    marker-width:@zoomwidth*60;
+    marker-line-width:@zoomlinewidth;
+    marker-line-color:@zoomlineopac;
+    }
+    marker-width:0;
+    }
+/*--------------------------------------*/
+  [zoom>=16] {
+  ::highlight {
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@ltopacity;
+    marker-line-color:@zoomlineco;
+    marker-width:@zoomwidth*80;
+    marker-line-width:@zoomlinewidth;
+    marker-line-color:@zoomlineopac;
+    }
+    ::highlight2 {
+    marker-line-color:@zoomlineco;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@ltopacity;
+    marker-line-color:@ltopacity;
+    marker-width:@zoomwidth*75;
+    marker-line-width:@zoomlinewidth;
+    marker-line-color:@zoomlineopac;
+    }
+    ::highlight3 {
+    marker-line-color:@zoomlineco;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@ltopacity;
+    marker-line-color:@ltopacity;
+    marker-width:@zoomwidth*70;
+    marker-line-width:@zoomlinewidth;
+    marker-line-color:@zoomlineopac;
+    }
+        marker-width:0;
+    }
+ [zoom >= 17] {
+  ::highlight {
+    marker-line-color:@zoomlineco;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@ltopacity;
+    marker-line-color:@zoomlineco;
+    marker-width:@zoomwidth*110;
+    marker-line-width:@zoomlinewidth;
+    marker-line-color:@zoomlineopac;
+    }
+    ::highlight2 {
+    marker-line-color:@zoomlineco;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@ltopacity;
+    marker-line-color:@ltopacity;
+    marker-width:@zoomwidth*105;
+    marker-line-width:@zoomlinewidth;
+    marker-line-color:@zoomlineopac;
+    }
+    ::highlight3 {
+    marker-line-color:@zoomlineco;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@ltopacity;
+    marker-line-color:@ltopacity;
+    marker-width:@zoomwidth*100;
+    marker-line-width:@zoomlinewidth;
+    marker-line-color:@zoomlineopac;
+    }
+    marker-width:0;
+  }
+[zoom = 18] {
+  ::highlight {
+    marker-line-color:@zoomlineco;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@ltopacity;
+    marker-line-color:@ltopacity;
+    marker-width:@zoomwidth*130;
+    marker-line-width:@zoomlinewidth;
+    marker-line-color:@zoomlineopac;
+    }
+    ::highlight2 {
+    marker-line-color:@zoomlineco;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@ltopacity;
+    marker-line-color:@ltopacity;
+    marker-width:@zoomwidth*125;
+    marker-line-width:@zoomlinewidth;
+    marker-line-color:@zoomlineopac;
+    }
+    ::highlight3 {
+    marker-line-color:@zoomlineco;
+    marker-allow-overlap:true;
+    marker-fill:@yellow;
+    marker-opacity:@ltopacity;
+    marker-line-color:@ltopacity;
+    marker-width:@zoomwidth*120;
+    marker-line-width:@zoomlinewidth;
+    marker-line-color:@zoomlineopac;
+    }
+        marker-width:0;
+  }
+
+}
+
+#delauney  [zoom < 7] {
+  line-color:lighten(@yellow,20%);//#E95C40;
+  line-width:0.2;
+  line-opacity:.3;
+  polygon-opacity:0;
+  polygon-fill:transparent;
+}
